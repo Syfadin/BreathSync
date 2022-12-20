@@ -1,4 +1,4 @@
-# BreathSync
+# BreathSync TumoMusic
 
 What is it? an app for scheduling spotify songs to sync with a [Tummo breathing excercise](https://www.youtube.com/watch?v=tybOi4hjZFQ) (as done by [Wim Hof](https://en.wikipedia.org/wiki/Wim_Hof))
 
