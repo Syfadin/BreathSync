@@ -1,27 +1,23 @@
 import React from 'react';
-import { View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import HomeScreen from './screens/Home';
-import SettingsScreen from './screens/Settings';
-import { Spotify } from './services/Spotify';
-import { Tummo } from './services/Tummo';
-import { Button, styles as buttonStyles } from './components/Button';
-import { Form, styles as formStyles } from './components/Form';
-import { Layout, styles as layoutStyles } from './components/Layout';
-import { Home, styles as homeStyles } from './screens/Home';
-import { Settings, styles as settingsStyles } from './screens/Settings';
-import { Timer, styles as timerStyles }
-
+import { Home } from './screens/Home';
+import { Settings } from './screens/Settings';
+import { Timer } from './screens/Timer';
+import { Spotify } from './screens/Spotify';
+import { Tummo } from './screens/Tummo';
 
 const Stack = createStackNavigator();
 
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Settings" component={SettingsScreen} />
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Settings" component={Settings} />
+        <Stack.Screen name="Timer" component={Timer} />
+        <Stack.Screen name="Spotify" component={Spotify} />
+        <Stack.Screen name="Tummo" component={Tummo} />
       </Stack.Navigator>
     </NavigationContainer>
   );
