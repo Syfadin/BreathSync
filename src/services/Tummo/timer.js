@@ -18,7 +18,7 @@ export const startTimer = (onTick) => {
 };
 
 export const stopTimer = () => {
-  // stop the timer
+  // stops the timer
 };
 
 export const resetTimer = () => {
